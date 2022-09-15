@@ -5,13 +5,15 @@ string[] favouriteFood =
     "Cannelloni ripieni", "Lasagna", "Parmigiana", "Frittata di pasta", "Pizza", "Sushi"
 };
 
+int arrayLenght = favouriteFood.Length;
+
 //Lunghezza della classifica
 
-Console.WriteLine(favouriteFood.Length);
+Console.WriteLine(arrayLenght);
 
 //Stampare la classifica con la posizione
 
-for (int i = 0; i < favouriteFood.Length; i++)
+for (int i = 0; i < arrayLenght; i++)
 {
     Console.WriteLine(favouriteFood[i]);
     Console.WriteLine(i + 1);
@@ -23,5 +25,14 @@ Console.WriteLine(favouriteFood[0]);
 
 //Ultima posizione 
 
-Console.WriteLine(favouriteFood[favouriteFood.Length - 1]);
+Console.WriteLine(favouriteFood[arrayLenght - 1]);
+
+if (arrayLenght % 2 == 0)
+{
+    Console.WriteLine(favouriteFood[(arrayLenght / 2) - 1]);
+    Console.WriteLine(favouriteFood[(arrayLenght / 2)]);
+} else
+{
+    Console.WriteLine(favouriteFood[arrayLenght / 2]);
+}
 
