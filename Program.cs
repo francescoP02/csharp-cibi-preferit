@@ -5,34 +5,37 @@ string[] favouriteFood =
     "Cannelloni ripieni", "Lasagna", "Parmigiana", "Frittata di pasta", "Pizza", "Sushi"
 };
 
-int arrayLenght = favouriteFood.Length;
+int arrayLength = favouriteFood.Length;
 
 //Lunghezza della classifica
 
-Console.WriteLine(arrayLenght);
+Console.WriteLine($"Lunghezza della classifica: {arrayLength}");
 
 //Stampare la classifica con la posizione
 
-for (int i = 0; i < arrayLenght; i++)
+for (int i = 0; i < arrayLength; i++)
 {
-    Console.WriteLine(favouriteFood[i]);
-    Console.WriteLine(i + 1);
+    //Console.WriteLine(favouriteFood[i]);
+    //Console.WriteLine(i + 1);
+    Console.WriteLine($"Posizione {i + 1} : {favouriteFood[i]}");
 };
 
 //Prima posizione
 
-Console.WriteLine(favouriteFood[0]);
+Console.WriteLine($"Prima posizione: {favouriteFood[0]}");
 
 //Ultima posizione 
 
-Console.WriteLine(favouriteFood[arrayLenght - 1]);
+Console.WriteLine($"Ultima posizione: {favouriteFood[arrayLength - 1]}");
 
-if (arrayLenght % 2 == 0)
+if (arrayLength % 2 == 0)
 {
-    Console.WriteLine(favouriteFood[(arrayLenght / 2) - 1]);
-    Console.WriteLine(favouriteFood[(arrayLenght / 2)]);
+    //Console.WriteLine(favouriteFood[(arrayLength / 2) - 1]);
+    Console.WriteLine($"Cibo a metà classifica : {(favouriteFood[(arrayLength / 2) - 1])}");
+    //Console.WriteLine(favouriteFood[(arrayLength / 2)]);
+    Console.WriteLine($"Cibo a metà classifica : {(favouriteFood[(arrayLength / 2)])}");
 } else
 {
-    Console.WriteLine(favouriteFood[arrayLenght / 2]);
+    Console.WriteLine($"Cibo a metà classifica : {(favouriteFood[(arrayLength / 2)])}");
 }
 
